@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tilt practice</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="venobox/venobox/venobox.css" type="text/css" media="screen" />
+
+</head>
+<body>
+    <h1>Hello</h1>
+
+    <div data-tilt>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
+        <img src="images/rayuga.jpg" alt="">
+        <h1 class="name">Rayuga</h1>
+        
+    </div>
+    <a class="venobox" data-autoplay="true" data-vbtype="video" href="videos/1.mp4">
+        <video class="venobox" src="videos/1.mp4"></video> 
+    </a>
+
+    <a class="venobox" data-autoplay="true" data-vbtype="video" href="videos/2.mp4">
+        <video class="venobox" src="videos/2.mp4"></video> 
+    </a>
+    
+
+
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="venobox/venobox.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.venobox').venobox({
+                closeBackground: "transparent",
+                bgcolor    : '#5dff5e',
+            }); 
+        });
+    </script>
+</body>
+</html>
